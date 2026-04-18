@@ -1,0 +1,14 @@
+# Project Summary: Bank Customer Segmentation Analysis
+
+## 🎯 Problem
+Understand customer behavior and segment users to improve marketing and revenue strategies.
+
+## 🛠 Approach
+- Cleaned and transformed data in Power BI  
+- Performed customer segmentation analysis  
+- Built interactive dashboard for insights  
+
+## 📊 Insights
+- Revenue is driven by a small customer segment  
+- Customers are concentrated in specific regions  
+- Several high-balance customers show low engagement  
