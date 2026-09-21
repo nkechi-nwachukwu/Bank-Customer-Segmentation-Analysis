@@ -84,19 +84,14 @@ High Recency
 +
 High Frequency
 +
-High Monetary
-=
-Highly valuable and recently engaged customer
+High Monetary = Highly valuable and recently engaged customer
 
 Whereas:
-
 Low Recency
 +
 Low Frequency
 +
-Historically High Monetary
-=
-Potential high-value reactivation opportunity
+Historically High Monetary = Potential high-value reactivation opportunity
 
 The actual segment definitions used in the project should be determined from the implemented scoring and classification logic
 
