@@ -202,8 +202,8 @@ Loyal / highly engaged customers
 Lower-engagement customers
 Customers requiring re-engagement
 
-The purpose of these segments is not simply to label customers, but to create a practical framework for differentiated customer management.
----
+**The purpose of these segments is not simply to label customers, but to create a practical framework for differentiated customer management.
+**---
 
 ## 📊 Key Findings
 - A small group of customers contributes to a large portion of total transaction value  
