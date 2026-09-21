@@ -6,10 +6,7 @@ This project analyzes over 1 million bank transaction records to uncover custome
 ---
 
 ## 📈 Dashboard Preview
-<img width="1074" height="602" alt="Business Overview of BCS" src="https://github.com/user-attachments/assets/65ccbaa2-bff8-4918-8b61-c22bf29c4965" />
-<img width="1077" height="596" alt="Customer Segment of BCS" src="https://github.com/user-attachments/assets/d6698766-06e9-4ec7-bc84-c75dfe723ab0" />
-<img width="1083" height="598" alt="Customer Demograpihcs of BCS" src="https://github.com/user-attachments/assets/b91b9aba-8a10-4767-90e9-fbf90aba439c" />
-<img width="1083" height="598" alt="Revenue Page of BCS" src="https://github.com/user-attachments/assets/358e8cfb-99ff-4652-9b73-df54794414d7" />
+<img width="1800" height="1200" alt="Bank Segmentation Mockup" src="https://github.com/user-attachments/assets/1c4a0f48-0fee-4c96-8872-0c6a88444867" />
 
 ---
 
