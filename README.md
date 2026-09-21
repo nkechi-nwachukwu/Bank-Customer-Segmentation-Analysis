@@ -49,14 +49,8 @@ This project was designed to:
 
 The analysis uses a transactional customer dataset containing 1M+ records.
 The transaction-level data was transformed into a customer-level analytical dataset before segmentation.
-****Analytical grain
-The original dataset is analysed at the:
-****Transaction level
-The final segmentation table operates at the:
-****Customer level
-This distinction is important because RFM analysis evaluates customer behaviour across a defined observation period rather than evaluating individual transactions independently.
 
-## Analytical Framework
+## 🔄 Analytical Framework
 
 The core analytical framework is RFM analysis.
 RFM measures customer behaviour using three dimensions:
@@ -78,7 +72,7 @@ Frequency = COUNT(Transaction)
 
 **Monetary**
 Measures the total transaction value associated with each customer.
-Higher monetary value indicates greater historical financial contri
+Higher monetary value indicates greater historical financial contribution.
 Monetary = SUM(Transaction Value)
 
 **Combined Interpretation**
@@ -106,6 +100,7 @@ Potential high-value reactivation opportunity
 
 The actual segment definitions used in the project should be determined from the implemented scoring and classification logic
 
+
 ## 🛠 Tools Used
 - Power BI  
 - Power Query (Data Cleaning & Transformation)  
@@ -113,21 +108,113 @@ The actual segment definitions used in the project should be determined from the
 
 ---
 
-## 🔄 Approach
-- Cleaned and transformed over 1 million transaction records using Power Query  
-- Standardized and structured demographic and transaction fields  
-- Built a data model in Power BI for analysis  
-- Created calculated measures to track customer behavior and spending patterns  
-- Segmented customers based on transaction frequency, value, and demographics  
-- Designed an interactive dashboard for exploratory analysis and insights  
+## 🧮 Methodology
 
+The analysis follows the workflow below:
+
+Raw Transaction Data
+        ↓
+Data Profiling
+        ↓
+Data Cleaning & Validation
+        ↓
+Customer-Level Aggregation
+        ↓
+RFM Metric Calculation
+        ↓
+RFM Scoring
+        ↓
+Customer Segmentation
+        ↓
+Segment-Level Analysis
+        ↓
+Power BI Dashboard 
+        ↓ 
+Business Insights
+        ↓ 
+Retention & Targeting Opportunities
+
+**1. Data Profiling**
+The first stage involved assessing the transaction dataset for:
+- Data types
+- Missing values
+- Duplicate records
+- Invalid transaction values
+- Customer identifier consistency
+- Transaction date validity
+- Monetary field integrity
+- Potential outliers
+- Transaction-level granularity
+
+The purpose of profiling was to establish whether the dataset was suitable for customer-level aggregation and behavioural analysis.
+
+**2. Data Cleaning**
+The data preparation stage focused on improving analytical reliability before calculating customer metrics.
+Key checks included:
+- Standardising field formats
+- Validating transaction dates
+- Checking customer identifiers
+- Reviewing missing values
+- Checking duplicate records
+- Validating transaction amounts
+- Removing or addressing invalid observations where appropriate
+
+Data quality is particularly important in RFM analysis because errors in transaction dates or monetary values directly affect customer scores and subsequent segmentation.
+
+**3. Customer-Level Aggregation**
+The transaction-level dataset was transformed into a customer-level analytical table.
+For each customer, the analysis calculated:
+- Customer ID
+- Last Transaction Date
+- Recency
+- Transaction Count
+- Frequency
+- Total Transaction Value
+- Monetary
+
+This transformation creates the analytical foundation required for RFM segmentation.
+
+**RFM Calculation**
+**Recency**
+Recency was calculated as the number of days between the analysis reference date and each customer's most recent transaction.
+Conceptually:
+A lower recency value indicates a more recent customer interaction.
+
+**Frequency**
+Frequency represents the number of transactions associated with each customer during the observation period.
+
+**Monetary**
+Monetary value represents the total transaction value associated with each customer.
+
+RFM Scoring
+Customers were scored across the three RFM dimensions to enable behavioural comparison.
+The scoring framework converts the raw RFM measures into relative customer scores.
+The resulting customer profile can therefore be represented as:
+R Score
++
+F Score
++
+M Score
+= Customer RFM Profile
+
+The combined RFM profile was then used to classify customers into actionable behavioural/value segments.
+
+**Customer Segmentation**
+The segmentation framework distinguishes customers according to their observed transaction behaviour and value.
+The analysis identified groups including:
+High-value customers
+Loyal / highly engaged customers
+Lower-engagement customers
+Customers requiring re-engagement
+
+The purpose of these segments is not simply to label customers, but to create a practical framework for differentiated customer management.
 ---
 
-## 📊 Key Insights
+## 📊 Key Findings
 - A small group of customers contributes to a large portion of total transaction value  
 - Revenue is high, but individual transaction values are relatively low  
 - Customers are concentrated in specific geographic regions 
--Transaction activity peaks at certain times, suggesting opportunities for time-based promotions  
+- Transaction activity peaks at certain times, suggesting opportunities for time-based promotions  
 - Some customers show low spending but high balances, indicating untapped potential
 
 ---
@@ -141,11 +228,39 @@ The actual segment definitions used in the project should be determined from the
 
 ---
 
-## 🚀 Conclusion
-Customer segmentation reveals valuable insights that can help banks improve marketing targeting, enhance customer retention, and optimize revenue strategies. Data-driven segmentation enables more personalized and effective decision-making.
+## 🚀 Potential Extensions
+The project can be extended into a broader customer analytics framework by incorporating:
+
+Customer Lifetime Value
+Estimate expected future customer value using historical behaviour and profitability.
+
+Churn Prediction
+Develop a predictive model to identify customers at elevated risk of inactivity.
+
+Cohort Analysis
+Analyse customer retention and behaviour across acquisition cohorts.
+
+Customer Profitability
+Combine transaction revenue with product/service costs to distinguish revenue from actual customer contribution.
+
+Predictive Segmentation
+Combine RFM variables with additional behavioural features and machine-learning clustering techniques.
+
+Campaign Measurement
+Use customer segments as treatment groups and measure campaign response, conversion, retention, and incremental revenue.
+
+## 🧾Conclusion
+
+This project demonstrates how transaction-level customer data can be transformed into a structured customer intelligence framework.
+By combining data transformation, RFM analysis, customer segmentation, and Power BI visualisation, the analysis provides a practical approach to understanding customer value and engagement.
+The resulting segmentation framework enables organisations to move from broad customer reporting toward more differentiated customer management, with particular visibility into high-value, loyal, and lower-engagement customer groups.
+
 
 ---
 
 ## 📌 Author
 **Nkechi Nwachukwu**  
-Data Analyst | Excel • SQL • Power BI
+Business Analyst | Data & Operations Analytics
+Portfolio: dorothy-data-portfolio.lovable.app
+GitHub: github.com/nkechi-nwachukwu
+LinkedIn: linkedin.com/in/nkechi-nwachukwu-82ba911bb
