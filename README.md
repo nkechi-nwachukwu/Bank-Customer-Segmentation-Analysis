@@ -257,8 +257,8 @@ The resulting segmentation framework enables organisations to move from broad cu
 **Nkechi Nwachukwu**  
 Business Analyst | Data & Operations Analytics
 
-Portfolio: dorothy-data-portfolio.lovable.app
+Portfolio: https://dorothy-data-portfolio.lovable.app
 
-GitHub: github.com/nkechi-nwachukwu
+GitHub: https://github.com/nkechi-nwachukwu
 
-LinkedIn: linkedin.com/in/nkechi-nwachukwu-82ba911bb
+LinkedIn: https://linkedin.com/in/nkechi-nwachukwu-82ba911bb
