@@ -1,7 +1,13 @@
 # 📊 Bank Customer Segmentation Analysis
 
 ## 🎯 Project Overview
-This project analyzes over 1 million bank transaction records to uncover customer behavioral patterns and demographic trends. The goal is to segment customers based on their transaction activity, spending behavior, and demographic attributes to support data-driven decisions in marketing, customer retention, and revenue optimization.
+Customer behaviour varies significantly across a banking customer base. Treating all customers as a single population can result in inefficient marketing, weak retention strategies, and poor allocation of customer engagement resources.
+
+This project applies RFM (Recency, Frequency, Monetary) analysis to a dataset containing 1M+ customer transaction records to identify behavioural and value-based customer segments.
+
+The analysis transforms transaction-level data into customer-level behavioural metrics, assigns RFM scores, classifies customers into actionable segments, and visualises segment performance through an interactive Power BI dashboard.
+
+The objective is to provide a structured analytical framework for understanding customer value, engagement, and purchasing behaviour and to support more targeted customer retention and commercial strategies.
 
 ---
 
@@ -10,15 +16,47 @@ This project analyzes over 1 million bank transaction records to uncover custome
 
 ---
 
-## 🎯 Business Problem
-Banks handle large volumes of customer transaction data but often struggle to translate it into actionable insights. This project aims to:
+## ⚠️ Business Problem
+Banks handle large volumes of customer transaction data but often struggle to translate it into actionable insights. 
+They have limited visibility into:
+Which customers generate the greatest value
+Which customers demonstrate strong engagement
+Which customers may require re-engagement
+How customer value is distributed across behavioural segments
+How customer segments contribute to overall revenue
+Where targeted retention and customer engagement strategies could be applied
 
+Without customer-level segmentation, customer engagement initiatives may be applied too broadly.
+The analysis therefore focuses on converting transactional behaviour into actionable customer segments.
+
+##  📈 Project Objectives
+
+This project was designed to:
+- Analyse customer transaction behaviour at scale.
+- Aggregate transaction-level activity into customer-level metrics.
+- Calculate Recency, Frequency, and Monetary measures.
+- Assign RFM scores to customers.
+- Identify high-value and high-engagement customer groups.
 - Identify meaningful customer segments based on behavior and demographics  
-- Understand spending patterns across different customer groups  
-- Support targeted marketing and retention strategies  
+- Understand spending patterns across different customer groups
+- Quantify the contribution of customer segments to overall revenue.
+- Develop an interactive Power BI dashboard for segment monitoring.
+- Translate analytical findings into potential retention and targeting strategies.
 - Improve revenue optimization through data-driven segmentation  
 
 ---
+## 📂 Dataset
+
+The analysis uses a transactional customer dataset containing 1M+ records.
+The transaction-level data was transformed into a customer-level analytical dataset before segmentation.
+__Analytical grain
+The original dataset is analysed at the:
+__Transaction level
+The final segmentation table operates at the:
+__Customer level
+This distinction is important because RFM analysis evaluates customer behaviour across a defined observation period rather than evaluating individual transactions independently.
+
+
 
 ## 🛠 Tools Used
 - Power BI  
